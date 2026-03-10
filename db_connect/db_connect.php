@@ -1,12 +1,16 @@
 <?php
 
-$host = ${DB_HOST};
-$username = ${DB_USERNAME}
-$password = ${DB_PASSWORD}
-$database = ${DB_NAME}
+$host = getenv("DB_HOST");
+$username = getenv("DB_USERNAME");
+$password = getenv("DB_PASSWORD");
+$database = getenv("DB_NAME");
 
 $conn = mysqli_connect($host, $username, $password, $database);
 
 if (!$conn) {
     die("Connection Failed: " . mysqli_connect_error());
 }
+
+echo "Connected successfully";
+
+?>
