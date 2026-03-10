@@ -1,9 +1,9 @@
 <?php
 
-$host = getenv("DB_HOST");
-$username = getenv("DB_USER");
-$password = getenv("DB_PASS");
-$database = getenv("DB_NAME");
+$host = ${DB_HOST};
+$username = ${DB_USERNAME}
+$password = ${DB_PASSWORD}
+$database = ${DB_NAME}
 
 $conn = mysqli_connect($host, $username, $password, $database);
 
