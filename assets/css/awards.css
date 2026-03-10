@@ -1,0 +1,123 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #f4f4f4;
+}
+
+.awards-section {
+    background: #efe2a2;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.awards-card {
+    background: #fff;
+    max-width: 1000px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Tabs */
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tab {
+    border: none;
+    background: none;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 8px 14px;
+}
+
+.tab.active {
+    background: #1f75b6;
+    color: white;
+    border-radius: 20px;
+}
+
+/* Content */
+
+.tab-content-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hide content */
+
+.tab-content {
+    opacity: 0;
+    transform: translateY(15px);
+    transition: all .4s ease;
+    position: absolute;
+    width: 100%;
+    pointer-events: none;
+}
+
+/* Active content */
+
+.tab-content.active {
+    opacity: 1;
+    transform: translateY(0);
+    position: relative;
+    pointer-events: auto;
+}
+
+/* Awards list */
+
+.awards-list {
+    max-height: 220px;
+    overflow-y: auto;
+}
+
+.awards-list li {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+/* Scrollbar */
+
+.awards-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.awards-list::-webkit-scrollbar-thumb {
+    background: #f0c000;
+    border-radius: 10px;
+}
+
+/* Responsive */
+
+@media(max-width:768px) {
+
+    .tabs {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+    }
+
+    .tab {
+        white-space: nowrap;
+        font-size: 14px;
+    }
+
+}
+
+@media(max-width:480px) {
+
+    .awards-card {
+        padding: 20px;
+    }
+
+    .tab {
+        font-size: 13px;
+    }
+
+}

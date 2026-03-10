@@ -1,0 +1,76 @@
+/* SECTION */
+
+.college-section {
+    padding: 20px;
+    background: #f2f2f2;
+}
+
+/* GRID LAYOUT */
+
+.college-wrapper {
+    width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 450px 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+/* IMAGE FRAME */
+
+.college-image-frame {
+    background: #2b9de0;
+    padding: 1px 25px 20px 1px;
+    border-radius: 80px;
+}
+
+.college-image-frame img {
+    width: 100%;
+    display: block;
+    border-radius: 15px;
+}
+
+/* TEXT */
+
+.college-title {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.college-description {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #666;
+    margin-bottom: 18px;
+    max-width: 550px;
+}
+
+/* BUTTON */
+
+.career-btn {
+    background: #ffd400;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+/* BUTTON ICON */
+
+.btn-icon {
+    background: #fff;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}

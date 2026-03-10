@@ -1,0 +1,74 @@
+/* SECTION */
+
+.career-hero{
+    padding:20px;
+    background:#f2f2f2;
+}
+
+/* BANNER */
+
+.career-banner{
+    position:relative;
+    max-width:1200px;
+    margin:auto;
+    border-radius:12px;
+    overflow:hidden;
+}
+
+.career-banner img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+    display:block;
+}
+
+/* DARK OVERLAY */
+
+.career-overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.85));
+}
+
+/* TEXT CONTENT */
+
+.career-content{
+    position:absolute;
+    left:60px;
+    bottom:60px;
+    color:white;
+}
+
+.career-content h1{
+    color: #f2f2f2;
+    font-size:48px;
+    font-weight:500;
+    margin-bottom:20px;
+}
+
+/* BREADCRUMB */
+
+.career-breadcrumb{
+    background:white;
+    color:#333;
+    display:inline-flex;
+    align-items:center;
+    padding:10px 20px;
+    border-radius:25px;
+    font-size:14px;
+    font-weight:500;
+}
+
+/* YELLOW DOT */
+
+.career-breadcrumb .dot{
+    width:8px;
+    height:8px;
+    background:#ffd400;
+    border-radius:50%;
+    margin:0 10px;
+}
+
